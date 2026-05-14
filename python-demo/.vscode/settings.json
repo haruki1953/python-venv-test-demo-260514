@@ -1,0 +1,13 @@
+{
+  // 针对 Python 文件的专属设置
+  "[python]": {
+    // 使用 Ruff 作为默认格式化器
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    // 保存时自动格式化
+    "editor.formatOnSave": true
+  },
+  // 启用 Ruff 的 lint（诊断提示）
+  "ruff.lint.enable": true,
+  // 不启用自动修复（fixAll），避免自动删除变量或 import
+  "ruff.fixAll": false
+}

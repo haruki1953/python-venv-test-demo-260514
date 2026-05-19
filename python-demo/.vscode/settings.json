@@ -9,5 +9,30 @@
   // 启用 Ruff 的 lint（诊断提示）
   "ruff.lint.enable": true,
   // 不启用自动修复（fixAll），避免自动删除变量或 import
-  "ruff.fixAll": false
+  "ruff.fixAll": false,
+  // 启用最严格的类型检查模式：
+  // - 检查参数类型
+  // - 检查返回类型
+  // - 检查属性是否存在
+  // - 检查 None 安全
+  // - 检查泛型使用
+  // - 检查未使用变量等
+  "python.analysis.typeCheckingMode": "strict",
+  // // 覆盖某些诊断项的严重级别
+  // "python.analysis.diagnosticSeverityOverrides": {
+  //   // 不要因为“找不到模块”报错
+  //   // 适用于：你在 Windows 上 fake rpi_ws281x、gpiozero 等树莓派库
+  //   "reportMissingImports": "none",
+  //   // 不要因为“模块没有源码”报错
+  //   // 适用于：只有 .pyi 或 fake 模块时
+  //   "reportMissingModuleSource": "none",
+  //   // 不要因为“第三方库缺少类型 stub (.pyi)”报错
+  //   // 适用于：gpiozero、rpi_ws281x 等没有官方 stub 的库
+  //   "reportMissingTypeStubs": "none",
+  //   // 忽略 Unknown 类型（C 扩展常见）
+  //   "reportUnknownVariableType": "none",
+  //   "reportUnknownParameterType": "none",
+  //   "reportUnknownArgumentType": "none",
+  //   "reportUnknownMemberType": "none"
+  // }
 }

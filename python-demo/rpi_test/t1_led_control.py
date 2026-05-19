@@ -1,4 +1,4 @@
-# test\t1_led_control.py
+# t1_led_control.py
 import asyncio
 from gpiozero import LED  # type: ignore
 
